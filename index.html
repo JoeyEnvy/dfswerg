@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dfswerg | About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            max-width: 600px;
+            font-size: 1.2rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .about img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            line-height: 1.6;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-item i {
+            font-size: 2rem;
+            color: #ff6347;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">dfswerg</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to dfswerg</h1>
+        <p>Your culinary journey begins here. Experience the finest dining with a twist of creativity and tradition.</p>
+    </section>
+
+    <main>
+        <section class="about">
+            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="Restaurant Interior">
+            <h2>About Us</h2>
+            <p>dfswerg is a unique dining destination that marries the elegance of a traditional restaurant with the vibrancy of modern culinary art. Our mission is to create memorable dining experiences that delight every sense, from the visual artistry of our dishes to the rich aromas and tastes that linger long after the meal is over.</p>
+            <p>Our audience is anyone who appreciates fine dining with a flair for the extraordinary. Whether you’re celebrating a special occasion or simply indulging in a culinary adventure, dfswerg offers a welcoming atmosphere where every guest is treated like family.</p>
+            <p>Our mission is simple yet profound: to provide an unparalleled dining experience that leaves a lasting impression. We prioritize quality ingredients, innovative techniques, and exceptional service to ensure that every visit is extraordinary.</p>
+        </section>
+
+        <section class="services">
+            <div class="service-item">
+                <i class="fas fa-utensils"></i>
+                <h3>Exquisite Cuisine</h3>
+                <p>Discover a menu crafted with the finest ingredients and a touch of creativity.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-wine-bottle"></i>
+                <h3>Fine Wines</h3>
+                <p>Pair your meal with selections from our curated wine list.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-birthday-cake"></i>
+                <h3>Special Occasions</h3>
+                <p>Celebrate life's moments with us, from birthdays to anniversaries.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 dfswerg. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
